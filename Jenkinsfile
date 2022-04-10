@@ -2,11 +2,11 @@
 pipeline {
     
     environment {
-    imagename = "becomedevops/petclinic"
+    imagename = "varaprasadthatisetti/new2petclinic"
     registryCredential = 'Dockerhubcreds'
     dockerImage = ''
   }
-    agent {label 'worker1'}
+    agent any
 
     stages {
         
